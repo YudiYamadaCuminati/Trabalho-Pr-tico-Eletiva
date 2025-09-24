@@ -283,4 +283,151 @@
  /* tela home*/
 /* ================================================================================================= */
 
-  
+/* ================================================================================================= */
+ /* tela refinir senha*/
+
+.bodyrs {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* CABEÇALHO */
+.headerrs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logors img {
+    height: 32px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.brandrs {
+    font-weight: bold;
+    font-size: 20px;
+    color: #f53d2d;
+}
+
+.helprs {
+    color: #f53d2d;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* FORMULÁRIO CENTRAL */
+.mainrs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.cardrs {
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 6px;
+    text-align: center;
+    width: 320px;
+    position: relative;
+}
+
+.backrs {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.cardrs h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.cardrs input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.cardrs button {
+    background: #f53d2d;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 95%;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* RODAPÉ */
+.footerrs {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background: #f9f9f9;
+    padding: 20px 30px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.footerrs-section {
+    max-width: 200px;
+    margin: 10px;
+}
+
+.footerrs-section h4 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footerrs-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerrs-section ul li {
+    margin: 5px 0;
+}
+
+.footerrs-section ul li a {
+    color: #555;
+    text-decoration: none;
+}
+
+.paymentsrs img {
+    height: 20px;
+    margin: 5px;
+}
+
+.storers {
+    display: block;
+    max-width: 150px;
+    margin: 5px 0;
+}
+
+.copyrightrs {
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+.links-sociais li a img {
+    width: 24px;
+    margin-right: 10px;
+}
