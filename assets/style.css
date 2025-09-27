@@ -276,7 +276,11 @@
   gap: 1% ;
   padding-left: 7%; /* Diminui a distância da margem esquerda */
   padding-right: 6%; /* Diminui a distância da margem direita */
+<<<<<<< HEAD
   padding-bottom: 6%;
+=======
+  padding-bottom: 1%;
+>>>>>>> 38c16c65ab338db822f5ab9c461d8db213eff600
   
 }
 
@@ -468,6 +472,7 @@
  /* ================================================================================================= */
   /* Interface-cadastro-cliente */
   /* =========================================================================*/
+<<<<<<< HEAD
   .form-card {
     background: rgb(255, 255, 255);
     padding: 30px;
@@ -550,3 +555,22 @@ button:hover {
   justify-content: center;
   padding: 40px 20px;
 }
+=======
+
+  /* ================================================================================================= */
+  /* TELA DE PRODUTOS */
+  /* =========================================================================*/
+
+  .produtotela{
+    background-color: white;
+    width: 82%;
+    height: fill;
+    margin-left: 10%;
+    padding-right: 20%;
+    
+  }
+
+  /* ================================================================================================= */
+  /* Interface-cadastro-cliente */
+  /* =========================================================================*/
+>>>>>>> 38c16c65ab338db822f5ab9c461d8db213eff600
