@@ -276,7 +276,7 @@
   gap: 1% ;
   padding-left: 7%; /* Diminui a distância da margem esquerda */
   padding-right: 6%; /* Diminui a distância da margem direita */
-  padding-bottom: 1%;
+  padding-bottom: 6%;
   
 }
 
@@ -322,7 +322,7 @@
 .bodyrs {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 /* CABEÇALHO */
@@ -331,7 +331,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid rgb(221, 221, 221);
 }
 
 .logors img {
@@ -343,11 +343,11 @@
 .brandrs {
     font-weight: bold;
     font-size: 20px;
-    color: #f53d2d;
+    color: rgb(245, 61, 45);
 }
 
 .helprs {
-    color: #f53d2d;
+    color: rgb(245, 61, 45);
     text-decoration: none;
     font-size: 14px;
 }
@@ -361,7 +361,7 @@
 }
 
 .cardrs {
-    background: white;
+    background: rgb(255, 255, 255);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 30px;
     border-radius: 6px;
@@ -375,7 +375,7 @@
     top: 10px;
     left: 15px;
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 20px;
 }
 
@@ -388,13 +388,13 @@
     width: 90%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid rgb(221, 221, 221);
     border-radius: 4px;
 }
 
 .cardrs button {
-    background: #f53d2d;
-    color: white;
+    background: rgb(245, 61, 45);
+    color: rgb(255, 255, 255);
     border: none;
     padding: 10px;
     width: 95%;
@@ -409,9 +409,9 @@
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
-    background: #f9f9f9;
+    background: rgb(249, 249, 249);
     padding: 20px 30px;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid rgb(221, 221, 221);
     font-size: 14px;
 }
 
@@ -437,7 +437,7 @@
 }
 
 .footerrs-section ul li a {
-    color: #555;
+    color: rgb(85, 85, 85);
     text-decoration: none;
 }
 
@@ -456,8 +456,8 @@
     text-align: center;
     padding: 10px;
     font-size: 13px;
-    background: #f9f9f9;
-    border-top: 1px solid #ddd;
+    background: rgb(249, 249, 249);
+    border-top: 1px solid rgb(221, 221, 221);
 }
 
 .links-sociais li a img {
@@ -468,6 +468,90 @@
  /* ================================================================================================= */
   /* Interface-cadastro-cliente */
   /* =========================================================================*/
+
+  .form-card {
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 6px;
+    width: 400px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-card h2 {
+    color: rgb(245, 61, 45);
+    margin-bottom: 20px;
+}
+
+.form-card input {
+    width: 95%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 4px;
+}
+
+.upload-label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: rgb(245, 61, 45);
+}
+
+
+.form-card button {
+    background: rgb(245, 61, 45);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+label {
+  font-size: 14px;
+  color: rgb(255, 77, 0);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.file-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.file-input input[type="file"] {
+  padding: 5px;
+}
+
+button {
+  background-color: rgb(255, 77, 0);
+  color: rgb(255, 255, 255);
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: rgb(224, 62, 0);
+}
+
+.maincd {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
 
   /* ================================================================================================= */
   /* TELA DE PRODUTOS */
@@ -486,13 +570,6 @@
   /* Interface-cadastro-cliente */
   /* =========================================================================*/
 
-
-* {
-    box-sizing: border-box;
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
 html, body {
     height: 100%;
@@ -701,7 +778,6 @@ body {
     background-color: #e03d00 !important;
 }
 
-
 .rodape {
     background: #f5f5f5;
     padding: 38px 20px 60px;
@@ -766,4 +842,5 @@ body {
     .main-cadastro .formulario { padding: 24px; margin: 12px; }
     .rodape .colunas { flex-direction: column; gap: 8px; }
 }
+
 
