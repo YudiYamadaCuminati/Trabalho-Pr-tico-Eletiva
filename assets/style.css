@@ -228,7 +228,7 @@
   .subtopo {
     background: rgb(255, 135, 55);
     display: flexbox;
-    height: 50px;
+    height: 60px;
     border: solid rgba(0, 0, 0, 0.096) 1px;
     padding-top: 12px;
     
