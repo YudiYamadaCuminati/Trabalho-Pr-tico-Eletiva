@@ -485,3 +485,285 @@
   /* ================================================================================================= */
   /* Interface-cadastro-cliente */
   /* =========================================================================*/
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+body {
+    background-color: #c3c3c3; 
+    -webkit-font-smoothing: antialiased;
+}
+
+.topohome {
+    background-color: rgb(251, 86, 48);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px;
+    color: #fff;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+}
+
+.topohome .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.topohome .logo img {
+    width: 48px;
+    height: auto;
+}
+
+.topohome .logo span {
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: .2px;
+}
+
+.topohome .sair {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.subtopo {
+    background-color: rgb(251, 119, 48);
+    padding: 8px 0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+}
+
+.subtopo ul {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    list-style: none;
+    padding: 0 16px;
+}
+
+.subtopo ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 6px 12px;
+    font-weight: 600;
+    border-radius: 4px;
+    display: inline-block;
+    transition: all .18s ease-in-out;
+    font-size: 14px;
+}
+
+.subtopo ul li a:hover {
+    background-color: #ffffff;
+    color: rgb(251, 86, 48);
+    box-shadow: 0 0 8px rgba(255,255,255,0.25);
+}
+
+
+.main-cadastro {
+    background-color: transparent;
+    padding: 60px 16px 80px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.main-cadastro .formulario {
+    background-color: #ffffff;
+    max-width: 480px;     
+    width: 100%;
+    padding: 34px 40px;
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    margin: 8px;
+}
+
+
+.main-cadastro .formulario h2,
+.main-cadastro .formulario .titulo {
+    color: rgb(251, 86, 48);
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.main-cadastro .formulario .form-control {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 14px;
+    border: 1px solid #e9e9e9;
+    border-radius: 2px;
+    font-size: 13px;
+    color: #333;
+    background: #fff;
+    box-shadow: none;
+}
+
+.main-cadastro .formulario .form-control::placeholder {
+    color: #bfbfbf;
+}
+
+.main-cadastro .formulario .gap-large {
+    margin-bottom: 20px;
+}
+
+.main-cadastro .formulario input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
+
+.main-cadastro .formulario .form-control:focus {
+    border-color: rgb(251, 86, 48);
+    outline: none;
+    box-shadow: 0 0 6px rgba(251,86,48,0.12);
+}
+
+.main-cadastro .formulario h5 {
+    color: rgb(251, 86, 48);
+    text-align: center;
+    margin: 18px 0 12px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.secao-upload-arquivo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.secao-upload-arquivo .btn.btn-secondary,
+.secao-upload-arquivo .label-upload-arquivo {
+    display: inline-block;
+    background-color: #ffffff !important;
+    color: rgb(251, 86, 48) !important;
+    border: 1px solid rgb(251, 86, 48);
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+    font-size: 13px;
+}
+
+.secao-upload-arquivo .btn.btn-secondary:hover,
+.secao-upload-arquivo .label-upload-arquivo:hover {
+    background-color: rgb(251, 86, 48) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 10px rgba(251,86,48,0.15);
+}
+
+#nomeArquivo {
+    color: #6b6b6b;
+    font-size: 13px;
+}
+
+.main-cadastro input[type="file"] {
+    display: none;
+}
+
+.main-cadastro .formulario .btn.btn-primary,
+.main-cadastro .formulario button[type="submit"],
+.main-cadastro .formulario .btn-cadastrar {
+    display: block;
+    width: 100%;
+    background-color: rgb(251, 86, 48) !important;
+    color: #ffffff !important;
+    padding: 12px 14px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+    margin-top: 6px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.main-cadastro .formulario .btn.btn-primary:hover,
+.main-cadastro .formulario button[type="submit"]:hover,
+.main-cadastro .formulario .btn-cadastrar:hover {
+    background-color: #e03d00 !important;
+}
+
+
+.rodape {
+    background: #f5f5f5;
+    padding: 38px 20px 60px;
+    border-top: 1px solid #e6e6e6;
+}
+
+.rodape .colunas {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.rodape .colunas > div {
+    flex: 1;
+    min-width: 160px;
+    color: #444;
+    padding: 8px 12px;
+}
+
+.rodape h4 {
+    font-size: 13px;
+    margin-bottom: 16px;
+    color: #2a2a2a;
+    font-weight: 700;
+}
+
+.rodape ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rodape ul li {
+    margin: 8px 0;
+    font-size: 13px;
+}
+
+.rodape ul li a {
+    text-decoration: none;
+    color: #757575;
+}
+
+.rodape ul li a:hover {
+    color: rgb(251, 86, 48);
+}
+
+
+.copy, .copyright {
+    text-align: center;
+    color: #7a7a7a;
+    margin-top: 18px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    .subtopo ul { gap: 10px; padding: 0 8px; flex-wrap: wrap; justify-content: flex-start; }
+    .main-cadastro { padding: 40px 12px; }
+    .main-cadastro .formulario { padding: 24px; margin: 12px; }
+    .rodape .colunas { flex-direction: column; gap: 8px; }
+}
+
