@@ -851,3 +851,336 @@ body {
 }
 
 
+* {
+    /* O seletor universal é mantido para resetar o margin/padding e definir a fonte */
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*******************************************************************************************
+Header-Universal
+*******************************************************************************************/
+header {
+    align-items: center;
+    background-color: rgb(251, 86, 48);
+}
+
+header .conteiner-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header .conteiner-header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .conteiner-header img {
+    width: 50px;
+    height: auto;
+}
+
+header .conteiner-header h1 {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+}
+
+header .conteiner-header a {
+    margin: 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+header .conteiner-header a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(251, 86, 48);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+/*******************************************************************************************
+Fim->Header-Universal<-Fim
+*******************************************************************************************/
+
+/*******************************************************************************************
+Nav-Universal
+*******************************************************************************************/
+nav {
+    background-color: rgb(251, 119, 48);
+    padding: 5px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(251, 86, 48);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+/*******************************************************************************************
+Fim->Nav-Universal<-Fim
+*******************************************************************************************/
+
+/*******************************************************************************************
+Main-Universal (Apenas seletores compatíveis com a estrutura .main-telas-de-visualizar)
+*******************************************************************************************/
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(251, 86, 48); /* Note que esta regra será sobrescrita pela classe específica */
+}
+
+main .secao-clientes .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main .secao-clientes .grid-container .cliente {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+main .secao-clientes .grid-container .cliente:hover {
+    transform: translateY(-5px);
+    text-decoration-color: rgb(251, 119, 48);
+    box-shadow: 0px 4px 8px rgb(251, 119, 48);
+}
+
+main .secao-clientes .grid-container .cliente img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+main .secao-clientes .grid-container .cliente p {
+    color: rgb(117, 117, 117);
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+/*******************************************************************************************
+Fim->Main-Universal<-Fim
+*******************************************************************************************/
+
+/*//////////////////////////////////////////////////////////////////////////////////////////
+Main-Telas-de-Visualizar
+//////////////////////////////////////////////////////////////////////////////////////////*/
+.main-telas-de-visualizar {
+    background-color: rgb(117, 117, 117);
+    padding: 0;
+}
+
+.main-telas-de-visualizar .secao-clientes {
+    background-color: rgb(255, 255, 255);
+    padding-top: 20px;
+}
+
+.main-telas-de-visualizar .secao-clientes h6 {
+    color: rgb(251, 119, 48);
+    text-align: center;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////
+Fim->Main-Telas-de-Visualizar<-Fim
+//////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*******************************************************************************************
+Footer-Universal
+*******************************************************************************************/
+footer {
+    background: rgb(245, 245, 245);
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* O seletor 'footer' no seu HTML tem a classe .rodape, mas o CSS usa 'footer' e .secoes/div.colunas */
+.rodape { /* Adicionado seletor de classe do seu HTML para garantir o estilo do footer */
+    background: rgb(245, 245, 245);
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.colunas { /* Corresponde a .secoes no CSS, mantive o nome do HTML */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+    border-bottom: 1px solid rgb(119, 119, 119);
+}
+
+.colunas div { /* Estilo para cada div dentro de .colunas */
+    flex: 1;
+    padding: 40px 0;
+    min-width: 200px;
+    text-align: left;
+}
+
+.colunas div h4 {
+    font-size: 14px;
+    margin-bottom: 27px;
+    color: rgb(42, 42, 42);
+}
+
+.colunas div ul {
+    list-style: none;
+    padding: 0;
+}
+
+.colunas div ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.colunas div ul li a {
+    text-decoration-color: transparent;
+    color: rgb(117, 117, 117);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.colunas div ul li a:hover {
+    text-decoration-color: rgb(251, 86, 48);
+}
+
+.colunas div img { /* Estilo para as imagens de pagamento */
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    margin: 5px;
+}
+
+.colunas div ul.social li a i { /* Estilo para os ícones sociais (Font Awesome) */
+    margin-right: 10px;
+}
+
+/* O QR Code e as logos das lojas no footer não tinham classes específicas, mas as regras foram mantidas para os elementos img/a/li/ul */
+
+.copy { /* Corresponde a .copyright no CSS, mas foi adaptado para a classe do HTML */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(117, 117, 117);
+    margin-top: 20px;
+}
+
+/* Regra para a linha horizontal no rodapé */
+footer hr {
+    /* Sem estilos específicos no CSS fornecido, mas a tag está no HTML. */
+    border: 0;
+    height: 1px;
+    background: rgb(119, 119, 119);
+    margin: 10px auto;
+    width: 90%; /* Ajuste para melhor visualização */
+}
+
+/*funcionário*/
+
+/*//////////////////////////////////////////////////////////////////////////////////////////
+Main-Telas-de-Visualizar (apenas para a seção de funcionários)
+//////////////////////////////////////////////////////////////////////////////////////////*/
+.main-telas-de-visualizar {
+    background-color: rgb(117, 117, 117); /* Cor de fundo do main geral */
+    padding: 0; /* O padding geral do main, que já estava em 0 */
+}
+
+/* Assumindo que "secao-funcionario.png" é um erro e deveria ser "secao-funcionarios" */
+.main-telas-de-visualizar .secao-funcionarios {
+    background-color: rgb(255, 255, 255); /* Fundo branco para a seção de funcionários */
+    padding-top: 20px;
+}
+
+/* Título "FUNCIONÁRIOS" */
+.main-telas-de-visualizar .secao-funcionarios h6 {
+    color: rgb(251, 119, 48);
+    text-align: center;
+}
+
+/* Container que organiza os funcionários em grid */
+.main-telas-de-visualizar .secao-funcionarios .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cada item individual de funcionário (o link <a> com a classe .funcionario) */
+.main-telas-de-visualizar .secao-funcionarios .grid-container .funcionario {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration-color: transparent; /* Remove sublinhado padrão do link, mas permite hover */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efeito ao passar o mouse sobre um funcionário */
+.main-telas-de-visualizar .secao-funcionarios .grid-container .funcionario:hover {
+    transform: translateY(-5px); /* Efeito de "levantar" */
+    text-decoration-color: rgb(251, 119, 48); /* Adiciona cor ao texto no hover */
+    box-shadow: 0px 4px 8px rgb(251, 119, 48); /* Adiciona sombra colorida no hover */
+}
+
+/* Imagem do funcionário */
+.main-telas-de-visualizar .secao-funcionarios .grid-container .funcionario img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Parágrafos de texto dentro do item do funcionário (nome e atendimento) */
+.main-telas-de-visualizar .secao-funcionarios .grid-container .funcionario p {
+    color: rgb(117, 117, 117);
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////
+Fim->Main-Telas-de-Visualizar<-Fim
+//////////////////////////////////////////////////////////////////////////////////////////*/
