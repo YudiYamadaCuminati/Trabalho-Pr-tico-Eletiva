@@ -274,22 +274,22 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr); 
   gap: 5% ;
-  padding-left: 20%; /* Diminui a distância da margem esquerda */
+  padding-left: 10%; /* Diminui a distância da margem esquerda */
   padding-right: 50%; /* Diminui a distância da margem direita */
   padding-bottom: 6%;
   
 }
 
 .produtos img{
-  width: 170px;
-  height: 140px;
+  width: 250px;
+  height: 170px;
   margin-top:10%;
   
 }
 
 .produtos div{
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.089) ;
-  width: 200px;
+  width: 270px;
   text-align: center;
   
   
@@ -559,12 +559,18 @@ button:hover {
 
   .produtotela{
     background-color: white;
-    width: 82%;
+    width: 90%;
     height: auto;
-    margin-left: 10%;
+    margin-left: 5%;
 
     
   }
+
+  .produtotela div{
+    margin-left: -5%;
+
+  }
+
 
   /* ================================================================================================= */
   /* Interface-cadastro-cliente */
