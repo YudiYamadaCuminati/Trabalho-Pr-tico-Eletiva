@@ -273,9 +273,9 @@
 .produtos{
   display: grid;
   grid-template-columns: repeat(5, 1fr); 
-  gap: 1% ;
-  padding-left: 7%; /* Diminui a distância da margem esquerda */
-  padding-right: 6%; /* Diminui a distância da margem direita */
+  gap: 5% ;
+  padding-left: 20%; /* Diminui a distância da margem esquerda */
+  padding-right: 50%; /* Diminui a distância da margem direita */
   padding-bottom: 6%;
   
 }
@@ -560,9 +560,9 @@ button:hover {
   .produtotela{
     background-color: white;
     width: 82%;
-    height: fill;
+    height: auto;
     margin-left: 10%;
-    padding-right: 20%;
+
     
   }
 
@@ -577,7 +577,7 @@ html, body {
 
 
 body {
-    background-color: rgb(195, 195, 195); 
+    background-color: #c3c3c3; 
     -webkit-font-smoothing: antialiased;
 }
 
@@ -587,7 +587,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 12px 40px;
-    color: rgb(255, 255, 255);
+    color: #fff;
     box-shadow: 0 1px 0 rgba(0,0,0,0.05);
 }
 
@@ -605,12 +605,12 @@ body {
 .topohome .logo span {
     font-size: 26px;
     font-weight: 700;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     letter-spacing: .2px;
 }
 
 .topohome .sair {
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     text-decoration: none;
     font-weight: 600;
 }
@@ -633,7 +633,7 @@ body {
 }
 
 .subtopo ul li a {
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     text-decoration: none;
     padding: 6px 12px;
     font-weight: 600;
@@ -644,7 +644,7 @@ body {
 }
 
 .subtopo ul li a:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     color: rgb(251, 86, 48);
     box-shadow: 0 0 8px rgba(255,255,255,0.25);
 }
@@ -659,12 +659,12 @@ body {
 
 
 .main-cadastro .formulario {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     max-width: 480px;     
     width: 100%;
     padding: 34px 40px;
     border-radius: 6px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
     margin: 8px;
 }
 
@@ -682,16 +682,16 @@ body {
     width: 100%;
     padding: 10px 12px;
     margin-bottom: 14px;
-    border: 1px solid rgb(233, 233, 233);
+    border: 1px solid #e9e9e9;
     border-radius: 2px;
     font-size: 13px;
-    color: rgb(51, 51, 51);
-    background: rgb(255, 255, 255);
+    color: #333;
+    background: #fff;
     box-shadow: none;
 }
 
 .main-cadastro .formulario .form-control::placeholder {
-    color: rgb(191, 191, 191);
+    color: #bfbfbf;
 }
 
 .main-cadastro .formulario .gap-large {
@@ -740,12 +740,12 @@ body {
 .secao-upload-arquivo .btn.btn-secondary:hover,
 .secao-upload-arquivo .label-upload-arquivo:hover {
     background-color: rgb(251, 86, 48) !important;
-    color: rgb(255, 255, 255) !important;
+    color: #ffffff !important;
     box-shadow: 0 4px 10px rgba(251,86,48,0.15);
 }
 
 #nomeArquivo {
-    color: rgb(107, 107, 107);
+    color: #6b6b6b;
     font-size: 13px;
 }
 
@@ -759,7 +759,7 @@ body {
     display: block;
     width: 100%;
     background-color: rgb(251, 86, 48) !important;
-    color: rgb(255, 255, 255) !important;
+    color: #ffffff !important;
     padding: 12px 14px;
     text-align: center;
     border: none;
@@ -775,13 +775,13 @@ body {
 .main-cadastro .formulario .btn.btn-primary:hover,
 .main-cadastro .formulario button[type="submit"]:hover,
 .main-cadastro .formulario .btn-cadastrar:hover {
-    background-color: rgb(224, 61, 0) !important;
+    background-color: #e03d00 !important;
 }
 
 .rodape {
-    background: rgb(245, 245, 245);
+    background: #f5f5f5;
     padding: 38px 20px 60px;
-    border-top: 1px solid rgb(230, 230, 230);
+    border-top: 1px solid #e6e6e6;
 }
 
 .rodape .colunas {
@@ -796,14 +796,14 @@ body {
 .rodape .colunas > div {
     flex: 1;
     min-width: 160px;
-    color: rgb(68, 68, 68);
+    color: #444;
     padding: 8px 12px;
 }
 
 .rodape h4 {
     font-size: 13px;
     margin-bottom: 16px;
-    color: rgb(42, 42, 42);
+    color: #2a2a2a;
     font-weight: 700;
 }
 
@@ -820,7 +820,7 @@ body {
 
 .rodape ul li a {
     text-decoration: none;
-    color: rgb(117, 117, 117);
+    color: #757575;
 }
 
 .rodape ul li a:hover {
@@ -830,7 +830,7 @@ body {
 
 .copy, .copyright {
     text-align: center;
-    color: rgb(122, 122, 122);
+    color: #7a7a7a;
     margin-top: 18px;
     font-size: 12px;
     font-weight: 600;
