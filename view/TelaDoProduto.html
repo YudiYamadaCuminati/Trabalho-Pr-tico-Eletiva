@@ -1,1 +1,70 @@
-!
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camisa Desenvolvedor Front-End CSS - Xhopii</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Xhopii</div>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Cadastro Cliente</a>
+            <a href="#">Cadastro Funcionário</a>
+            <a href="#">Cadastro Produto</a>
+            <a href="#">Ver Clientes</a>
+            <a href="#">Ver Funcionários</a>
+            <a href="#">Ver Produtos</a>
+        </nav>
+    </header>
+
+    <main class="product-page-container">
+        <div class="image-gallery">
+            <div class="thumbnails">
+                <img src="\assets\img\produto1.png" alt="Camiseta Preta" class="thumbnail selected">
+                <img src="\assets\img\produto2.png" alt="Camiseta Azul Claro" class="thumbnail">
+                <img src="\assets\img\produto3.png" alt="Camiseta Verde Militar" class="thumbnail">
+                <img src="\assets\img\produto4.png" alt="Camiseta Cinza Claro" class="thumbnail">
+                <img src="\assets\img\produto5.png" alt="Camiseta Rosa Claro" class="thumbnail">
+            </div>
+            <div class="main-image">
+                <img src="\assets\img\produto1.png" alt="Camisa Desenvolvedor Front-End CSS - Imagem Principal">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <h1>Camisa Desenvolvedor Front-End CSS</h1>
+            <p class="price">R$56,90</p>
+            <p class="availability">171 peças disponíveis</p>
+
+            <div class="models-section">
+                <h2>Modelos:</h2>
+                <div class="color-options">
+                    <button class="color-btn selected">Preto</button>
+                    <button class="color-btn">Azul</button>
+                    <button class="color-btn">Verde</button>
+                    <button class="color-btn">Cinza</button>
+                    <button class="color-btn">Rosa</button>
+                </div>
+            </div>
+
+            <div class="sizes-section">
+                <h2>Tamanhos:</h2>
+                <div class="size-options">
+                    <button class="size-btn selected">P</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn">G</button>
+                    <button class="size-btn">GG</button>
+                </div>
+            </div>
+
+            <p class="selected-size-display">Tamanho Selecionado: P</p>
+
+            <button class="buy-button">Comprar Agora</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
